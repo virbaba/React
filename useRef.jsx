@@ -4,6 +4,8 @@ function Form() {
     function handleForm(event) {
       event.preventDefault();
       console.log(inputText.current.value); // Access input value using .current.value
+              // here on UI we see the update value 
+      setName((currentName) => [...currentName, inputText.current.value]);
     }
   return (
     <>
